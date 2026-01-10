@@ -1,78 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Kat Choppy — Author</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="site-shell">
-    <header>
-      <nav>
-        <a href="index.html" class="active">Home</a>
-        <a href="books-written.html">Books Written</a>
-        <a href="books-edited.html">Books Edited</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </header>
+  <header class="site-header">
+    <!-- Header image at the very top -->
+    <a href="index.html" class="header-link">
+      <img src="header.jpg" alt="Kat Choppy" class="header-image" />
+    </a>
 
-    <section class="hero">
-      <div class="hero-card">
-        <img src="photo.jpg" alt="Author photo of Kat Choppy" class="hero-photo">
+    <!-- Keep real text for accessibility/SEO, but visually subtle -->
+    <h1 class="site-title">Kat Choppy</h1>
+    <p class="tagline">Author • Editor</p>
 
-        <h1 class="hero-title">Kat Choppy</h1>
-        <p class="hero-tagline">Author • Editor</p>
+    <nav class="nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="books-written.html">Books Written</a>
+      <a href="books-edited.html">Books Edited</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-        <div class="rule"></div>
+  <main class="container">
+    <section class="card">
+      <div class="about">
+        <!-- AUTHOR PHOTO APPEARS ONLY ONCE -->
+        <img src="photo.jpg" alt="Author photo of Kat Choppy" class="author-photo" />
 
-        <div class="prose">
+        <div>
+          <h2>About</h2>
           <p>
-            Replace this with your bio. Aim for 3–6 sentences: what you write, where you’re based (optional),
-            and what readers can expect.
+            Replace this with your bio. Aim for 3–6 sentences: what you write, what you edit,
+            and where readers can find your work.
           </p>
         </div>
       </div>
     </section>
 
-    <section class="section">
+    <section class="card">
       <h2>Featured Books</h2>
-      <p class="prose">
-        A quick line here is optional — for example: “Browse my published work and editorial projects.”
-      </p>
+
+      <!-- Optional cover grid -->
+      <div class="covers">
+        <article class="cover-card">
+          <img src="cover-book-1.jpg" alt="Cover of Book Title One" />
+          <div class="cover-meta">
+            <div class="cover-title">Book Title One</div>
+            <div class="cover-note">Written</div>
+          </div>
+        </article>
+
+        <article class="cover-card">
+          <img src="cover-book-2.jpg" alt="Cover of Book Title Two" />
+          <div class="cover-meta">
+            <div class="cover-title">Book Title Two</div>
+            <div class="cover-note">Written</div>
+          </div>
+        </article>
+
+        <article class="cover-card">
+          <img src="cover-book-3.jpg" alt="Cover of Edited Book Title" />
+          <div class="cover-meta">
+            <div class="cover-title">Edited Book Title</div>
+            <div class="cover-note">Edited</div>
+          </div>
+        </article>
+      </div>
     </section>
+  </main>
 
-    <footer>© Kat Choppy</footer>
-  </div>
-</body>
+  <footer class="footer">© <span id="year"></span> Kat Choppy</footer>
 
-
-<header>
-  <img src="header.jpg" alt="Kat Choppy — Author" class="site-header-image">
-
-  <h1 class="visually-hidden">Kat Choppy</h1>
-
-  <nav>
-    
-    <a href="index.html">Home</a>
-    <a href="books-written.html">Books Written</a>
-    <a href="books-edited.html">Books Edited</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-</header>
-
-<main>
-  <img src="photo.jpg" alt="Author photo of Kat Choppy" class="author-photo">
-
-  <h2>About</h2>
-  <p>
-    Kat Choppy is an author and editor.  
-    <!-- Replace this paragraph with your real bio -->
-  </p>
-</main>
-
-<footer>
-  © Kat Choppy
-</footer>
-
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
