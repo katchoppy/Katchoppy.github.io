@@ -39,18 +39,19 @@ body{
   margin: 0 auto 15px;
 }
 
-.site-title{
-  margin: 0;
-  font-weight: 400;
-  letter-spacing: .2px;
-  font-size: clamp(2.1rem, 3.8vw, 2.8rem);
+.site-title,
+.tagline{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
-.tagline{
-  margin: 6px 0 0;
-  color: var(--muted);
-  font-size: 1.05rem;
-}
 
 .nav{
   display: flex;
