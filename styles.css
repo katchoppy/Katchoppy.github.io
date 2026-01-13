@@ -35,7 +35,7 @@ body{
   display: inline-block;
 }
 
-.header.png{
+.header-image{
   display: block;
   margin: 0 auto 15px;
   width: min(600px, 92vw);
@@ -63,9 +63,6 @@ body{
   flex-wrap: wrap;
   gap: 10px;
   margin-top: 16px;
-}
-
-.nav{
   width: 100%;
 }
 
