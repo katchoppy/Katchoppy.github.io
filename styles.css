@@ -43,8 +43,7 @@ body{
   height: auto;
 }
 
-.site-title,
-.tagline{
+.site-title{
   position: absolute;
   width: 1px;
   height: 1px;
@@ -56,6 +55,11 @@ body{
   border: 0;
 }
 
+.tagline{
+  margin: 6px 0 0;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
 
 .nav{
   display: flex;
